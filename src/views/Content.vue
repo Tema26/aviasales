@@ -37,6 +37,7 @@ export default {
             const responseSearchId = await fetch('https://front-test.beta.aviasales.ru/search'); // {"searchId":"4niyd"}
             const { searchId } = await responseSearchId.json(); // { searchId: "4niyd" }
             this.searchId = searchId;
+            
         },
         async getTickets() {
             const responseTickets = await fetch(`${getTicketsUrl}?searchId=${this.searchId}`);
