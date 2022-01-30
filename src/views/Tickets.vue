@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import TicketItem from '../views./components/TicketItem.vue';
+import TicketItem from '../components/TicketItem.vue';
 export default {
     components: {
         TicketItem,
